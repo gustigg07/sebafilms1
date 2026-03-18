@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seba Guerrero | Filmmaker Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+<nav id="navbar">
+    <div class="nav-container">
+        <a href="#" class="logo">
+            <span class="logo-main">SEBASTIAN <span class="text-orange">GUERRERO</span></span>
+            <span class="logo-divider"></span>
+            <span class="logo-dev">FILMMAKER</span>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#proyectos">TRABAJOS</a></li>
+            <li><a href="#servicios">SERVICIOS</a></li>
+            <li><a href="#biografia">PROCESO</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="lang-selector">
+                <span class="lang-btn active" onclick="changeLang('es')">ES</span>
+                <span class="lang-btn" onclick="changeLang('en')">EN</span>
+                <span class="lang-btn" onclick="changeLang('it')">IT</span>
+            </div>
+            <a href="https://wa.me/393519299054" class="btn-nav-whatsapp" id="btn-wa">¿PROYECTO?</a>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="mobile-menu-overlay" id="mobileMenu">
+    <div class="close-menu-btn" id="closeM">&times;</div>
+    
+    <nav class="mobile-nav-content">
+        <a href="#proyectos" class="mobile-link" data-key="trabajos">TRABAJOS</a>
+        <a href="#servicios" class="mobile-link" data-key="servicios">SERVICIOS</a>
+        <a href="#biografia" class="mobile-link" data-key="proceso">PROCESO</a>
+        <a href="#contacto" class="mobile-link" data-key="contacto">CONTACTO</a>
+        
+        <div class="mobile-lang-switch">
+            <span onclick="changeLang('es')" class="lang-btn">ES</span>
+            <span onclick="changeLang('en')" class="lang-btn">EN</span>
+            <span onclick="changeLang('it')" class="lang-btn">IT</span>
+        </div>
+    </nav>
+</div>
+<div class="close-menu" id="closeM">&times;</div>
+<header class="hero">
+    <video autoplay muted loop playsinline preload="metadata" class="hero-video">
+        <source src="assets/reel1.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1 id="hero-h1">Capturando <span class="text-orange">Momentos</span> <br>Que dejan una huella</h1>
+        <p id="hero-p">Director de Fotografía & Editor de Video</p>
+        <a href="#proyectos" class="btn-main" id="btn-main-hero">VER TRABAJO</a>
+    </div>
+</header>
+
+<section id="proyectos" class="portfolio-slider reveal">
+    <h2 class="section-title">PROYECTOS <span class="text-orange">CINEMATOGRÁFICOS</span></h2>
+    <div class="carousel-container">
+        <div class="video-card"><video src="assets/reel1.mp4" loop muted playsinline preload="metadata"></video></div>
+        <div class="video-card center"><video src="assets/reel2.mp4" loop muted playsinline autoplay preload="metadata"></video></div>
+        <div class="video-card"><video src="assets/reel3.mp4" loop muted playsinline preload="metadata"></video></div>
+        <div class="video-card"><video src="assets/reel5.mp4" loop muted playsinline preload="metadata"></video></div>
+        <div class="video-card"><video src="assets/reel1.mp4" loop muted playsinline preload="metadata"></video></div>
+    </div>
+</section>
+
+<section id="servicios" class="services-section reveal">
+    <div class="service-item">
+        <span class="num">01</span>
+        <h2>DIRECCIÓN DE <span class="text-orange">FOTOGRAFÍA</span></h2>
+        <p>Capturando la esencia visual de cada historia con iluminación de alto nivel.</p>
+    </div>
+    <div class="service-item">
+        <span class="num">02</span>
+        <h2>EDICIÓN & <span class="text-orange">COLOR</span></h2>
+        <p>Post-producción profesional con corrección de color Davinci.</p>
+    </div>
+    <div class="service-item">
+        <span class="num">03</span>
+        <h2>TOMAS <span class="text-orange">AÉREAS</span></h2>
+        <p>Perspectivas únicas con drones de última generación.</p>
+    </div>
+</section>
+
+<section id="biografia" class="bio-section reveal">
+    <h2 class="section-title center" data-key="bioTitle">EL <span class="text-orange">PROCESO</span></h2>
+    <p class="bio-description" style="display:none;" data-key="bioText1"></p>
+    
+    <div class="bio-container-zigzag">
+        <div class="bio-row">
+            <div class="bio-media neon-border"><video src="assets/reel5.mp4" loop muted playsinline autoplay></video></div>
+            <div class="bio-info-card">
+                <span class="num">01</span>
+                <h3 data-key="bioTitle">VISIÓN <span class="text-orange">REEL</span></h3>
+                <p data-key="bioText1">Capturando la energía del momento con un estilo dinámico y cinematográfico.</p>
+            </div>
+        </div>
+
+        <div class="bio-row reverse">
+            <div class="bio-media neon-border"><img src="assets/f1.jpeg" alt="Shooting"></div>
+            <div class="bio-info-card">
+                <span class="num">02</span>
+                <h3 data-key="bioTitle">EL <span class="text-orange">RODAJE</span></h3>
+                <p data-key="bioText2">Equipamiento de última generación y una técnica depurada para una calidad de élite.</p>
+            </div>
+        </div>
+    </div>
+    <div id="label-years" style="display:none;"></div>
+    <div id="label-projects" style="display:none;"></div>
+</section>
+<section class="brands-section">
+    <div class="container-fluid">
+        <h2 class="title-premium" data-key="testi_title" data-subtitle="PARTNERS">CONFÍAN</h2>
+        <div class="title-separator"></div>
+        
+        <div class="brands-slider">
+            <div class="brands-track">
+                <div class="brand-item">AETHER</div>
+                <div class="brand-item">NEXUS</div>
+                <div class="brand-item">VELOCITY</div>
+                <div class="brand-item">PRISM</div>
+                <div class="brand-item">QUANTUM</div>
+                <div class="brand-item">OBSIDIAN</div>
+                <div class="brand-item">AETHER</div>
+                <div class="brand-item">NEXUS</div>
+                <div class="brand-item">VELOCITY</div>
+                <div class="brand-item">PRISM</div>
+                <div class="brand-item">QUANTUM</div>
+                <div class="brand-item">OBSIDIAN</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials-section">
+    <div class="container-fluid">
+        <h2 class="title-premium" data-key="testi_title" data-subtitle="REVIEWS">FEEDBACK</h2>
+        <div class="title-separator"></div>
+        
+        <div class="testimonials-container">
+        
+        <div class="testimonial-card">
+            <div class="quote-icon">“</div>
+            <p class="testimonial-text" data-key="testi_1">
+                Trabajar con Sebafilms elevó nuestra marca a un nivel cinematográfico que no creíamos posible. Su ojo para el detalle y la iluminación es impecable, transformando cada toma en una pieza de arte.
+            </p>
+            <div class="testimonial-author">
+                <span class="author-name">Alejandro Rossi</span>
+                <span class="author-position" data-key="pos_1">Director Creativo, TechVision</span>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="quote-icon">“</div>
+            <p class="testimonial-text">
+                La narrativa visual que logran es única. Entienden la esencia del mensaje y la plasman con una fuerza que atrapa al espectador desde el primer segundo. Profesionales de primer nivel.
+            </p>
+            <div class="testimonial-author">
+                <span class="author-name">Carla Méndez</span>
+                <span class="author-position">Founder, Lux Media</span>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="quote-icon">“```html
+            <div class="quote-icon">“</div>
+            <p class="testimonial-text">
+                Buscábamos un look exclusivo y lo encontramos. El resultado final superó todas las expectativas, logrando una estética minimalista y sofisticada que define nuestra nueva identidad.
+            </p>
+            <div class="testimonial-author">
+                <span class="author-name">Julian Brandt</span>
+                <span class="author-position">Head of Marketing, Obsidian Co.</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <section id="contacto" class="contact-section reveal">
+    <div class="contact-wrapper">
+        <div class="contact-visual">
+            <h2 class="section-title" data-key="contactoH2">Hablemos de tu <span class="text-orange">Proyecto</span></h2>
+            
+            <div class="contact-info-blocks">
+                <div class="info-group">
+                    <span>Email</span>
+                    <p><a href="mailto:sebaguerrerofilms@gmail.com" style="color:inherit; text-decoration:none;">sebaguerrerofilms@gmail.com</a></p>
+                </div>
+                <div class="info-group">
+                    <span data-key="proceso">Ubicación</span> <p>Madrid, España</p>
+                </div>
+            </div>
+
+            <div class="social-icons-row">
+                <a href="https://instagram.com/sebaguerrerofilms" target="_blank" class="social-circle"><i class="fab fa-instagram"></i></a>
+                <a href="https://vimeo.com/tu_usuario" target="_blank" class="social-circle"><i class="fab fa-vimeo-v"></i></a>
+                <a href="https://youtube.com/@sebaguerrerofilms" target="_blank" class="social-circle"><i class="fab fa-youtube"></i></a>
+                <a href="https://wa.me/393519299054" target="_blank" class="social-circle"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <div class="contact-form-container">
+            <form id="contactForm" class="modern-form">
+                <div class="form-group">
+                    <input type="text" id="name" data-key="placeholderName" placeholder="Tu nombre..." required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="email@ejemplo.com" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" data-key="placeholderMsg" placeholder="Cuéntame tu idea..." rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-submit" data-key="btnEnviar">ENVIAR PROYECTO</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h2 class="footer-logo-md">SEBA<span>.</span>GUERRERO</h2>
+            <p>FILMMAKER & EDITOR</p>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+            <div class="footer-nav">
+                <a href="#">INSTAGRAM</a>
+                <a href="#">VIMEO</a>
+                <a href="#">WHATSAPP</a>
+            </div>
+            <p class="copyright">© 2026 ALL RIGHTS RESERVED</p>
+        </div>
+    </div>
+</footer>
+
+<div id="videoModal" class="video-modal">
+    <span class="close-modal" id="closeM">&times;</span>
+    <video id="modalVideo" controls></video>
+</div>
+
+<a href="https://wa.me/393519299054" class="whatsapp-btn-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <span>¿HABLAMOS?</span>
+</a>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    // --- 1. SELECTORES ---
+    const select = (id) => document.getElementById(id);
+    const q = (sel) => document.querySelector(sel);
+    const qa = (sel) => document.querySelectorAll(sel);
+
+    const hamburger = select('hamburger');
+    const mobileMenu = select('mobileMenu');
+    const closeBtnM = select('closeM'); 
+    const container = q('.carousel-container');
+    const cards = qa('.video-card');
+    const modal = select('videoModal');
+    const modalVid = select('modalVideo');
+    const navbar = select('navbar');
+
+    // --- 2. DICCIONARIO (ES/EN/IT) ---
+    const texts = {
+        es: {
+            trabajos: "TRABAJOS", servicios: "SERVICIOS", proceso: "PROCESO", contacto: "CONTACTO",
+            heroH1: 'Capturando <span class="text-orange">Momentos</span> <br>Que dejan una huella',
+            heroP: "Director de Fotografía & Editor de Video",
+            verTrabajo: "VER TRABAJO",
+            proyectosTitle: 'PROYECTOS <span class="text-orange">CINEMATOGRÁFICOS</span>',
+            serv1H2: 'DIRECCIÓN DE <span class="text-orange">FOTOGRAFÍA</span>',
+            serv1P: "Capturando la esencia visual de cada historia con iluminación de alto nivel.",
+            serv2H2: 'EDICIÓN & <span class="text-orange">COLOR</span>',
+            serv2P: "Post-producción profesional con corrección de color Davinci.",
+            serv3H2: 'TOMAS <span class="text-orange">AÉREAS</span>',
+            serv3P: "Perspectivas únicas con drones de última generación.",
+            bioTitle: 'EL <span class="text-orange">PROCESO</span>',
+            contactoH2: 'Hablemos de tu <span class="text-orange">Proyecto</span>',
+            placeholderName: "Tu nombre...",
+            placeholderMsg: "Cuéntame tu idea...",
+            btnEnviar: "ENVIAR PROYECTO",
+            btnWA: "¿PROYECTO?"
+        },
+        en: {
+            trabajos: "WORKS", servicios: "SERVICES", proceso: "PROCESS", contacto: "CONTACT",
+            heroH1: 'Telling <span class="text-orange">Stories</span> <br>THROUGH THE LENS',
+            heroP: "Director of Photography & Video Editor",
+            verTrabajo: "VIEW WORK",
+            proyectosTitle: 'SELECTED <span class="text-orange">WORKS</span>',
+            serv1H2: 'DIRECTOR OF <span class="text-orange">PHOTOGRAPHY</span>',
+            serv1P: "Capturing the visual essence of every story with high-level lighting.",
+            serv2H2: 'EDITING & <span class="text-orange">COLOR</span>',
+            serv2P: "Professional post-production with DaVinci color correction.",
+            serv3H2: 'AERIAL <span class="text-orange">SHOTS</span>',
+            serv3P: "Unique perspectives with latest generation drones.",
+            bioTitle: 'THE <span class="text-orange">PROCESS</span>',
+            contactoH2: 'Let’s talk about your <span class="text-orange">Project</span>',
+            placeholderName: "Your name...",
+            placeholderMsg: "Tell me your idea...",
+            btnEnviar: "SEND PROJECT",
+            btnWA: "PROJECT?"
+        },
+        it: {
+            trabajos: "LAVORI", servicios: "SERVIZI", proceso: "PROCESSO", contacto: "CONTATTO",
+            heroH1: 'Catturando <span class="text-orange">Momenti</span> <br>Che lasciano il segno',
+            heroP: "Direttore della Fotografia & Video Editor",
+            verTrabajo: "VEDI LAVORI",
+            proyectosTitle: 'PROGETTI <span class="text-orange">CINEMATOGRAFICI</span>',
+            serv1H2: 'DIRETTORE DELLA <span class="text-orange">FOTOGRAFIA</span>',
+            serv1P: "Catturare l'essenza visiva di ogni storia con un'illuminazione di alto livello.",
+            serv2H2: 'MONTAGGIO & <span class="text-orange">COLORE</span>',
+            serv2P: "Post-produzione professionale con correzione colore DaVinci.",
+            serv3H2: 'RIPRESE <span class="text-orange">AEREE</span>',
+            serv3P: "Prospettive uniche con droni di ultima generazione.",
+            bioTitle: 'IL <span class="text-orange">PROCESSO</span>',
+            contactoH2: 'Parliamo del tuo <span class="text-orange">Progetto</span>',
+            placeholderName: "Il tuo nome...",
+            placeholderMsg: "Raccontami la tua idea...",
+            btnEnviar: "INVIA PROGETTO",
+            btnWA: "PROGETTO?"
+        }
+    };
+
+    // --- 3. CAMBIO DE IDIOMA SEGURO ---
+    window.changeLang = (lang) => {
+        if (!texts[lang]) return;
+        localStorage.setItem('preferredLang', lang);
+
+        // Actualizar UI de botones
+        qa('.lang-btn').forEach(btn => btn.classList.toggle('active', btn.innerText.toLowerCase() === lang));
+
+        // Traducciones (con verificación para no romper el logo)
+        const h1 = select('hero-h1'); if(h1) h1.innerHTML = texts[lang].heroH1;
+        const hp = select('hero-p'); if(hp) hp.innerText = texts[lang].heroP;
+        const hb = select('btn-main-hero'); if(hb) hb.innerText = texts[lang].verTrabajo;
+        
+        const pt = q('#proyectos .section-title'); if(pt) pt.innerHTML = texts[lang].proyectosTitle;
+        const bt = q('#biografia .section-title'); if(bt) bt.innerHTML = texts[lang].bioTitle;
+        const ct = q('#contacto .section-title'); if(ct) ct.innerHTML = texts[lang].contactoH2;
+
+        const navLinks = qa('.nav-menu a, .mobile-nav a');
+        const keys = ['trabajos', 'servicios', 'proceso', 'contacto'];
+        navLinks.forEach((link, idx) => { if(link) link.innerText = texts[lang][keys[idx % 4]]; });
+
+        qa('.service-item').forEach((item, i) => {
+            const h2 = item.querySelector('h2');
+            const p = item.querySelector('p');
+            if(h2) h2.innerHTML = texts[lang][`serv${i+1}H2`];
+            if(p) p.innerText = texts[lang][`serv${i+1}P`];
+        });
+
+        const nameI = select('name'); if(nameI) nameI.placeholder = texts[lang].placeholderName;
+        const msgI = select('message'); if(msgI) msgI.placeholder = texts[lang].placeholderMsg;
+        const sBtn = q('.btn-submit'); if(sBtn) sBtn.innerText = texts[lang].btnEnviar;
+        const waB = select('btn-wa'); if(waB) waB.innerText = texts[lang].btnWA;
+    };
+
+    // --- 4. MENÚ MÓVIL ---
+ // Lógica para el Menú Hamburguesa
+const btnAbrir = document.getElementById('hamburger');
+const btnCerrar = document.getElementById('closeM');
+const elMenu = document.getElementById('mobileMenu');
+const linksMenu = document.querySelectorAll('.mobile-link');
+
+// Función para abrir
+if(btnAbrir) {
+    btnAbrir.addEventListener('click', () => {
+        elMenu.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Bloquea el scroll de fondo
+    });
+}
+
+// Función para cerrar con la Cruz
+if(btnCerrar) {
+    btnCerrar.addEventListener('click', () => {
+        elMenu.classList.remove('active');
+        document.body.style.overflow = 'auto'; // Devuelve el scroll
+    });
+}
+
+// Cerrar al hacer clic en un link (para navegar)
+linksMenu.forEach(link => {
+    link.addEventListener('click', () => {
+        elMenu.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    });
+});
+
+    // --- 5. CARRUSEL Y MODAL ---
+    cards.forEach(card => {
+        card.onclick = function() {
+            const v = this.querySelector('video');
+            if (this.classList.contains('center')) {
+                qa('video').forEach(vid => vid.pause());
+                if(modalVid && v) {
+                    modalVid.src = v.src;
+                    modal.classList.add('active');
+                    setTimeout(() => modalVid.play(), 100);
+                }
+            } else {
+                cards.forEach(c => { c.classList.remove('center'); if(c.querySelector('video')) c.querySelector('video').pause(); });
+                this.classList.add('center');
+                if(v) v.play();
+                const scrollX = this.offsetLeft - (container.offsetWidth / 2) + (this.offsetWidth / 2);
+                container.scrollTo({ left: scrollX, behavior: 'smooth' });
+            }
+        };
+    });
+
+    const closeMod = () => { if(modal) modal.classList.remove('active'); if(modalVid) { modalVid.pause(); modalVid.src = ""; } };
+    const closeM_Icon = select('closeM_video'); // Cambiado para evitar conflicto
+    if(closeM_Icon) closeM_Icon.onclick = closeMod;
+    if(modal) modal.onclick = (e) => { if(e.target === modal) closeMod(); };
+
+    // --- 6. SCROLL & REVEAL ---
+    const obs = new IntersectionObserver((es) => { es.forEach(e => { if(e.isIntersecting) e.target.classList.add("active"); }); }, { threshold: 0.1 });
+    qa('.reveal, .section-title, .service-item, .bio-row').forEach(el => obs.observe(el));
+
+    window.onscroll = () => { if(navbar) window.scrollY > 40 ? navbar.classList.add('scrolled') : navbar.classList.remove('scrolled'); };
+
+    // --- 7. WHATSAPP ---
+    const f = select('contactForm');
+    if(f) f.onsubmit = (e) => {
+        e.preventDefault();
+        const n = select('name').value;
+        const m = select('message').value;
+        window.open(`https://wa.me/393519299054?text=${encodeURIComponent("Hola Seba, soy " + n + ". Proyecto: " + m)}`, '_blank');
+    };
+
+    const sLang = localStorage.getItem('preferredLang') || 'es';
+    window.changeLang(sLang);
+});
+</script>
+</body>
+</html>
