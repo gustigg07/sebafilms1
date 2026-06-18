@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seba Guerrero | Filmmaker & Director de Fotografía</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="Seba Guerrero — Filmmaker, Director de Fotografía y Editor de Video. Producción cinematográfica de élite para marcas y proyectos creativos. Madrid, España.">
+    <meta name="author" content="Sebastian Guerrero">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sebafilms1.vercel.app/">
+    <meta property="og:title" content="Seba Guerrero | Filmmaker & Director de Fotografía">
+    <meta property="og:description" content="Producción cinematográfica de élite. Director de Fotografía, Edición & Color, Tomas Aéreas.">
+    <meta property="og:image" content="https://sebafilms1.vercel.app/assets/f1.jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Seba Guerrero | Filmmaker">
+    <meta name="twitter:description" content="Producción cinematográfica de élite. Director de Fotografía, Edición & Color, Tomas Aéreas.">
+    <meta name="twitter:image" content="https://sebafilms1.vercel.app/assets/f1.jpeg">
+
+    <!-- Preconnect para fuentes (mejora velocidad de carga) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+<nav id="navbar">
+    <div class="nav-container">
+        <a href="#" class="logo">
+            <span class="logo-main">SEBASTIAN <span class="text-orange">GUERRERO</span></span>
+            <span class="logo-divider"></span>
+            <span class="logo-dev">FILMMAKER</span>
+        </a>
+             <ul class="nav-menu" id="navMenu">
+               <li><a href="#proyectos" data-key="trabajos">TRABAJOS</a></li>
+               <li><a href="#servicios" data-key="servicios">SERVICIOS</a></li>
+               <li><a href="#biografia" data-key="proceso">PROCESO</a></li>
+               <li><a href="#contacto" data-key="contacto">CONTACTO</a></li>
+             </ul>
+        <div class="nav-right">
+            <div class="lang-selector">
+                <span class="lang-btn active" onclick="changeLang('es')">ES</span>
+                <span class="lang-btn" onclick="changeLang('en')">EN</span>
+                <span class="lang-btn" onclick="changeLang('it')">IT</span>
+            </div>
+            <a href="https://wa.me/393519299054" class="btn-nav-whatsapp" id="btn-wa">¿PROYECTO?</a>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="mobile-menu-overlay" id="mobileMenu">
+    <div class="close-menu-btn" id="closeMobile">&times;</div>
+    
+    <nav class="mobile-nav-content">
+        <a href="#proyectos" class="mobile-link" data-key="trabajos">TRABAJOS</a>
+        <a href="#servicios" class="mobile-link" data-key="servicios">SERVICIOS</a>
+        <a href="#biografia" class="mobile-link" data-key="proceso">PROCESO</a>
+        <a href="#contacto" class="mobile-link" data-key="contacto">CONTACTO</a>
+        
+        <div class="mobile-lang-switch">
+            <span onclick="changeLang('es')" class="lang-btn">ES</span>
+            <span onclick="changeLang('en')" class="lang-btn">EN</span>
+            <span onclick="changeLang('it')" class="lang-btn">IT</span>
+        </div>
+    </nav>
+</div>
+<header class="hero">
+    <video autoplay muted loop playsinline preload="metadata" class="hero-video" >
+        <source src="assets/ferrari.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <p id="hero-p">Director Visual & Editor de Video</p>
+            <p id="hero-p">Sede SARDEGNA, ITALIA</p>
+
+    </div>
+</header>
+
+<section id="proyectos" class="portfolio-slider">
+    <div class="container-fluid">
+        <h2 class="title-premium" data-subtitle="SELECTED WORKS">
+            PROYECTOS <span class="split-orange">CINEMATOGRÁFICOS</span>
+        </h2>
+        <div class="title-separator"></div>
+    </div>
+
+    <div class="carousel-container">
+        <div class="video-card">
+            <video data-src="assets/ferrari.mp4" muted loop playsinline preload="none"></video>
+            <div class="video-info" data-key="desc_1">Dirección de arte y colorimetría avanzada.</div>
+        </div>
+        <div class="video-card">
+            <video data-src="assets/crossfit.mp4" muted loop playsinline preload="none"></video>
+            <div class="video-info" data-key="desc_2">Producción de alta velocidad para marcas deportivas.</div>
+        </div>
+        <div class="video-card">
+            <video data-src="assets/reel10.mp4" muted loop playsinline preload="none"></video>
+            <div class="video-info">Estética cinemática y narrativa publicitaria de vanguardia.</div>
+        </div>
+        <div class="video-card">
+            <video data-src="assets/20.mp4" muted loop playsinline preload="none"></video>
+            <div class="video-info">Composiciones dinámicas e iluminación en entornos complejos.</div>
+        </div>
+    </div>
+<div class="slider-controls">
+    <button class="slider-arrow prev-video">
+        &#8592; 
+    </button>
+    <div class="slider-dots video-dots" id="videoDots"></div>
+    <button class="slider-arrow next-video">
+        &#8594;
+    </button>
+</div>
+</section>
+
+
+   
+<section id="biografia" class="bio-section reveal">
+    <h2 class="title-premium" data-key="bioTitle" data-subtitle="METODOLOGIA DE TRABAJO">EL <span class="split-orange">PROCESO</span></h2>
+    <div class="title-separator"></div>
+    <p class="bio-description" style="display:none;" data-key="bioText1"></p>
+    
+    <div class="bio-container-zigzag">
+        
+        <div class="bio-row">
+            <div class="bio-media neon-border"><img src="assets/proceso0.png" alt="Shooting"></div>
+            <div class="bio-info-card">
+                <h3 data-key="bioTitle">COMO <span class="text-orange">TRABAJO</span></h3>
+                <p data-key="bioText2">Cada proyecto tiene una dirección clara: entender el objetivo, construir una idea visual y transformarla en una pieza final con identidad.</p>
+            </div>
+        </div>
+
+        <div class="bio-row">
+            <div class="bio-media neon-border"><img src="assets/proceso1.png" alt="Shooting"></div>
+            <div class="bio-info-card">
+                <span class="num">01</span>
+                <h3 data-key="bioTitle">ANALISIS <span class="text-orange">& OBJETIVOS</span></h3>
+                <p data-key="bioText2">Definimos qué necesita comunicar el proyecto y cuál es su intención.</p>
+            </div>
+        </div>
+
+        <div class="bio-row">
+            <div class="bio-media neon-border"><img src="assets/proceso2.png" alt="Shooting"></div>
+            <div class="bio-info-card">
+                <span class="num">02</span>
+                <h3 data-key="bioTitle">DIRECCION <span class="text-orange">VISUAL</span></h3>
+                <p data-key="bioText2">Construimos el estilo, la atmósfera y el enfoque creativo.</p>
+            </div>
+        </div>
+
+        <div class="bio-row">
+            <div class="bio-media neon-border"><img src="assets/proceso3.png" alt="Shooting"></div>
+            <div class="bio-info-card">
+                <span class="num">03</span>
+                <h3 data-key="bioTitle">PRODUCCION <span class="text-orange"></span></h3>
+                <p data-key="bioText2">Realizo las tomas cuidando luz, encuadre, movimiento y detalles.</p>
+            </div>
+        </div>
+
+        <div class="bio-row">
+            <div class="bio-media neon-border"><img src="assets/proceso4.png" alt="Shooting"></div>
+            <div class="bio-info-card">
+                <span class="num">04</span>
+                <h3 data-key="bioTitle">EDICION Y <span class="text-orange">POST-PRODUCCION</span></h3>
+                <p data-key="bioText2">Organizo el material para crear ritmo, narrativa e impacto.</p>
+            </div>
+        </div>
+
+        <div class="bio-row">
+            <div class="bio-media neon-border"><video src="assets/proceso5.mov" loop muted playsinline autoplay></video></div>
+            <div class="bio-info-card">
+                <span class="num">05</span>
+                <h3 data-key="bioTitle">COLOR GRADING <span class="text-orange">& SOUND DESIGN</span></h3>
+                <p data-key="bioText1">Trabajo la atmósfera visual y sonora para darle carácter al video.</p>
+            </div>
+        </div>
+
+        <div class="bio-row">
+            <div class="bio-media neon-border"><img src="assets/proceso6.png" alt="Shooting"></div>
+            <div class="bio-info-card">
+                <span class="num">06</span>
+                <h3 data-key="bioTitle">ENTREGA <span class="text-orange"></span></h3>
+                <p data-key="bioText2">Finalizo el contenido en los formatos necesarios para cada plataforma.</p>
+            </div>
+        </div>
+
+    </div>
+    
+    <div id="label-years" style="display:none;"></div>
+    <div id="label-projects" style="display:none;"></div>
+</section>
+
+
+<section class="brands-section">
+    <div class="container-fluid">
+        <h2 class="title-premium" data-key="testi_title" data-subtitle="PARTNERS">CONFÍAN</h2>
+        <div class="title-separator"></div>
+        
+        <div class="brands-slider">
+            <div class="brands-track">
+                <div class="brand-item">AETHER</div>
+                <div class="brand-item">NEXUS</div>
+                <div class="brand-item">VELOCITY</div>
+                <div class="brand-item">PRISM</div>
+                <div class="brand-item">QUANTUM</div>
+                <div class="brand-item">OBSIDIAN</div>
+                <div class="brand-item">AETHER</div>
+                <div class="brand-item">NEXUS</div>
+                <div class="brand-item">VELOCITY</div>
+                <div class="brand-item">PRISM</div>
+                <div class="brand-item">QUANTUM</div>
+                <div class="brand-item">OBSIDIAN</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials-section">
+    <div class="container-fluid">
+        <h2 class="title-premium" data-subtitle="REVIEWS">FEED<span class="split-orange">BACK</span></h2>
+        <div class="title-separator"></div>
+
+        <!-- CARRUSEL AUTO-DESLIZANTE -->
+        <div class="testimonials-slider-wrapper">
+            <div class="testimonials-track" id="testimonialsTrack">
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">“</div>
+                    <p class="testimonial-text" data-key="testi_1">
+                        Trabajar con Sebafilms elevó nuestra marca a un nivel cinematográfico que no creíamos posible. Su ojo para el detalle y la iluminación es impecable, transformando cada toma en una pieza de arte.
+                    </p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Alejandro Rossi</span>
+                        <span class="author-position" data-key="pos_1">Director Creativo, TechVision</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">“</div>
+                    <p class="testimonial-text">
+                        La narrativa visual que logran es única. Entienden la esencia del mensaje y la plasman con una fuerza que atrapa al espectador desde el primer segundo. Profesionales de primer nivel.
+                    </p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Carla Méndez</span>
+                        <span class="author-position">Founder, Lux Media</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">“</div>
+                    <p class="testimonial-text">
+                        Buscábamos un look exclusivo y lo encontramos. El resultado final superó todas las expectativas, logrando una estética minimalista y sofisticada que define nuestra nueva identidad.
+                    </p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Julian Brandt</span>
+                        <span class="author-position">Head of Marketing, Obsidian Co.</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Controles -->
+            <div class="testi-controls">
+                <button class="testi-btn" id="testiPrev">&#8592;</button>
+                <div class="testi-dots" id="testiDots"></div>
+                <button class="testi-btn" id="testiNext">&#8594;</button>
+            </div>
+        </div>
+
+        <!-- FORMULARIO DEJAR COMENTARIO -->
+        <div class="comment-form-wrapper">
+            <h3 class="comment-form-title">DEJÁ TU <span class="text-orange">OPINIÓN</span></h3>
+            <form id="commentForm" class="comment-form">
+                <div class="comment-form-row">
+                    <input type="text" id="commentName" placeholder="Tu nombre..." required maxlength="60">
+                    <input type="text" id="commentRole" placeholder="Tu cargo / empresa..." maxlength="80">
+                </div>
+                <textarea id="commentText" placeholder="¿Cómo fue trabajar con Seba?" rows="3" required maxlength="300"></textarea>
+                <button type="submit" class="btn-submit-comment">PUBLICAR OPINIÓN ✶</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <section id="contacto" class="contact-section reveal">
+    <div class="contact-wrapper">
+        <div class="contact-visual">
+            <h2 class="title-premium" data-key="contactoH2" data-subtitle="CONTACT">Hablemos de tu <span class="split-orange">Proyecto</span></h2>
+            <div class="title-separator"></div>
+            
+            <div class="contact-info-blocks">
+                <div class="info-group">
+                    <span>Email</span>
+                    <p><a href="mailto:sebaguerrerofilms@gmail.com" style="color:inherit; text-decoration:none;">sebaguerrerofilms@gmail.com</a></p>
+                </div>
+                <div class="info-group">
+                    <span data-key="proceso">Ubicación</span> <p>Sardegna, Italia</p>
+                </div>
+            </div>
+
+            <div class="social-icons-row">
+                <a href="https://instagram.com/sebaguerrerofilms" target="_blank" class="social-circle"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/@sebaguerrerofilms" target="_blank" class="social-circle"><i class="fab fa-youtube"></i></a>
+                <a href="https://wa.me/393519299054" target="_blank" class="social-circle"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <div class="contact-form-container">
+            <form id="contactForm" class="modern-form">
+                <div class="form-group">
+                    <input type="text" id="name" data-key="placeholderName" placeholder="Tu nombre..." required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="email@ejemplo.com" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" data-key="placeholderMsg" placeholder="Cuéntame tu idea..." rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-submit" data-key="btnEnviar">ENVIAR PROYECTO</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h2 class="footer-logo-md">SEBASTIAN<span>.</span>GUERRERO</h2>
+            <p>FILMMAKER & EDITOR</p>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+            <div class="footer-nav">
+                <a href="https://instagram.com/sebaguerrerofilms" target="_blank">INSTAGRAM</a>
+                <a href="https://youtube.com/@sebaguerrerofilms" target="_blank">YOUTUBE</a>
+                <a href="https://wa.me/393519299054" target="_blank">WHATSAPP</a>
+            </div>
+            <p class="copyright">© 2026 sebaguerrerofilms| Footage & Copyright Reserved ®</p>
+        </div>
+    </div>
+</footer>
+
+<div id="videoModal" class="video-modal">
+    <span class="close-modal" id="closeM_video">&times;</span>
+    <video id="modalVideo" controls></video>
+</div>
+
+<a href="https://wa.me/393519299054" class="whatsapp-btn-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <span>¿HABLAMOS?</span>
+</a>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const select = (id) => document.getElementById(id);
+    const q = (sel) => document.querySelector(sel);
+    const qa = (sel) => document.querySelectorAll(sel);
+
+    const hamburger = select('hamburger');
+    const mobileMenu = select('mobileMenu');
+    const closeBtnM = select('closeMobile'); 
+    const container = q('.carousel-container');
+    const cards = qa('.video-card');
+    const modal = select('videoModal');
+    const modalVid = select('modalVideo');
+    const navbar = select('navbar');
+
+    const texts = {
+        es: {
+            trabajos: "TRABAJOS", servicios: "SERVICIOS", proceso: "PROCESO", contacto: "CONTACTO",
+            heroH1: 'Capturando <span class="text-orange">Momentos</span> <br>Que dejan una huella',
+            heroP: "Director de Fotografía & Editor de Video",
+            verTrabajo: "VER TRABAJO",
+            proyectosTitle: 'PROYECTOS <span class="text-orange">CINEMATOGRÁFICOS</span>',
+            serv1H2: 'DIRECCIÓN DE <span class="text-orange">FOTOGRAFÍA</span>',
+            serv1P: "Capturando la esencia visual de cada historia con iluminación de alto nivel.",
+            serv2H2: 'EDICIÓN & <span class="text-orange">COLOR</span>',
+            serv2P: "Post-producción profesional con corrección de color Davinci.",
+            serv3H2: 'TOMAS <span class="text-orange">AÉREAS</span>',
+            serv3P: "Perspectivas únicas con droni de última generación.",
+            bioTitle: 'EL <span class="split-orange">PROCESO</span>',
+            contactoH2: 'Hablemos de tu <span class="split-orange">Proyecto</span>',
+            placeholderName: "Tu nombre...",
+            placeholderMsg: "Cuéntame tu idea...",
+            btnEnviar: "ENVIAR PROYECTO",
+            btnWA: "¿PROYECTO?"
+        },
+        en: {
+            trabajos: "WORKS", servicios: "SERVICES", proceso: "PROCESS", contacto: "CONTACT",
+            heroH1: 'Telling <span class="text-orange">Stories</span> <br>THROUGH THE LENS',
+            heroP: "Director of Photography & Video Editor",
+            verTrabajo: "VIEW WORK",
+            proyectosTitle: 'SELECTED <span class="text-orange">WORKS</span>',
+            serv1H2: 'DIRECTOR OF <span class="text-orange">PHOTOGRAPHY</span>',
+            serv1P: "Capturing the visual essence of every story with high-level lighting.",
+            serv2H2: 'EDITING & <span class="text-orange">COLOR</span>',
+            serv2P: "Professional post-production with DaVinci color correction.",
+            serv3H2: 'AERIAL <span class="text-orange">SHOTS</span>',
+            serv3P: "Unique perspectives with latest generation drones.",
+            bioTitle: 'THE <span class="split-orange">PROCESS</span>',
+            contactoH2: 'Let’s talk about your <span class="split-orange">Project</span>',
+            placeholderName: "Your name...",
+            placeholderMsg: "Tell me your idea...",
+            btnEnviar: "SEND PROJECT",
+            btnWA: "PROJECT?"
+        },
+        it: {
+            trabajos: "LAVORI", servicios: "SERVIZI", proceso: "PROCESSO", contacto: "CONTATTO",
+            heroH1: 'Catturando <span class="text-orange">Momenti</span> <br>Che lasciano il segno',
+            heroP: "Direttore della Fotografia & Video Editor",
+            verTrabajo: "VEDI LAVORI",
+            proyectosTitle: 'PROGETTI <span class="text-orange">CINEMATOGRAFICI</span>',
+            serv1H2: 'DIRETTORE DELLA <span class="text-orange">FOTOGRAFIA</span>',
+            serv1P: "Catturare l'essenza visiva di ogni storia con un'illuminazione di alto livello.",
+            serv2H2: 'MONTAGGIO & <span class="text-orange">COLORE</span>',
+            serv2P: "Post-produzione professionale con correzione colore DaVinci.",
+            serv3H2: 'RIPRESE <span class="text-orange">AEREE</span>',
+            serv3P: "Prospettive uniche con droni di ultima generazione.",
+            bioTitle: 'IL <span class="split-orange">PROCESSO</span>',
+            contactoH2: 'Parliamo del tuo <span class="split-orange">Progetto</span>',
+            placeholderName: "Il tuo nome...",
+            placeholderMsg: "Raccontami la tua idea...",
+            btnEnviar: "INVIA PROGETTO",
+            btnWA: "PROGETTO?"
+        }
+    };
+
+    window.changeLang = (lang) => {
+        if (!texts[lang]) return;
+        localStorage.setItem('preferredLang', lang);
+
+        qa('.lang-btn').forEach(btn => btn.classList.toggle('active', btn.innerText.toLowerCase() === lang));
+
+        // Traducción inteligente por data-key
+        qa('[data-key]').forEach(el => {
+            const key = el.getAttribute('data-key');
+            if (texts[lang][key]) {
+                if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                    el.placeholder = texts[lang][key];
+                } else {
+                    el.innerHTML = texts[lang][key];
+                }
+            }
+        });
+
+        // Casos especiales fijos
+        if(select('hero-h1')) select('hero-h1').innerHTML = texts[lang].heroH1;
+        if(select('hero-p')) select('hero-p').innerText = texts[lang].heroP;
+        if(select('btn-wa')) select('btn-wa').innerText = texts[lang].btnWA;
+    };
+
+    // --- MENÚ MÓVIL ---
+    const toggleMenu = (open) => {
+        mobileMenu.classList.toggle('active', open);
+        document.body.style.overflow = open ? 'hidden' : 'auto';
+    };
+
+    if(hamburger) hamburger.onclick = () => toggleMenu(true);
+    if(closeBtnM) closeBtnM.onclick = () => toggleMenu(false);
+    qa('.mobile-link').forEach(l => l.onclick = () => toggleMenu(false));
+
+    // --- CARRUSEL TIPO RUEDA ---
+    let currentIndex = 0;
+    const videoDotsWrap = select('videoDots');
+
+    function buildVideoDots() {
+        if (!videoDotsWrap) return;
+        videoDotsWrap.innerHTML = '';
+        cards.forEach((_, i) => {
+            const d = document.createElement('button');
+            d.className = 'dot' + (i === 0 ? ' active' : '');
+            d.setAttribute('aria-label', 'Video ' + (i + 1));
+            d.onclick = () => { currentIndex = i; updateCarousel(); };
+            videoDotsWrap.appendChild(d);
+        });
+    }
+
+    function updateCarousel() {
+        const total = cards.length;
+        if (total === 0) return;
+
+        cards.forEach((card, i) => {
+            card.classList.remove('center', 'left1', 'right1', 'far');
+            const video = card.querySelector('video');
+            if (video && !video.paused) video.pause();
+
+            const diff = (i - currentIndex + total) % total;
+
+            if (diff === 0) {
+                card.classList.add('center');
+                if (video) {
+                    if (video.dataset.src && !video.src) {
+                        video.src = video.dataset.src;
+                        video.load();
+                        video.addEventListener('canplay', () => video.play().catch(() => {}), { once: true });
+                    } else {
+                        setTimeout(() => video.play().catch(() => {}), 100);
+                    }
+                }
+            } else if (diff === 1) {
+                card.classList.add('right1');
+            } else if (diff === total - 1) {
+                card.classList.add('left1');
+            } else {
+                card.classList.add('far');
+            }
+        });
+
+        if (videoDotsWrap) {
+            videoDotsWrap.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i === currentIndex));
+        }
+    }
+
+    cards.forEach((card, index) => {
+        card.onclick = function() {
+            if (this.classList.contains('center')) {
+                const v = this.querySelector('video');
+                if(modalVid && v) {
+                    modalVid.src = v.src || v.dataset.src;
+                    modal.classList.add('active');
+                    setTimeout(() => modalVid.play(), 100);
+                }
+            } else {
+                currentIndex = index;
+                updateCarousel();
+            }
+        };
+    });
+
+    if (q('.prev-video')) q('.prev-video').onclick = () => { currentIndex = (currentIndex - 1 + cards.length) % cards.length; updateCarousel(); };
+    if (q('.next-video')) q('.next-video').onclick = () => { currentIndex = (currentIndex + 1) % cards.length; updateCarousel(); };
+
+    const closeMod = () => { modal.classList.remove('active'); modalVid.pause(); modalVid.src = ""; };
+    if(select('closeM_video')) select('closeM_video').onclick = closeMod;
+    if(modal) modal.onclick = (e) => { if(e.target === modal) closeMod(); };
+
+// --- FORMULARIO CORREGIDO ---
+    const f = select('contactForm');
+    if(f) f.onsubmit = async (e) => {
+        e.preventDefault();
+        const btn = f.querySelector('.btn-submit');
+        const data = {
+            name: select('name').value,
+            email: select('email').value,
+            message: select('message').value
+        };
+
+        btn.innerText = '✦ ENVIANDO...';
+        btn.disabled = true;
+
+        try {
+            const res = await fetch(`https://formspree.io/f/xjglagoz`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: JSON.stringify(data)
+            });
+
+            if (res.ok) {
+                btn.innerText = '✦ ENVIADO — GRACIAS';
+                f.reset();
+                setTimeout(() => { btn.innerText = 'ENVIAR PROYECTO'; btn.disabled = false; }, 4000);
+            } else {
+                throw new Error();
+            }
+        } catch(err) {
+            // Fallback WhatsApp si falla internet o Formspree
+            window.open(`https://wa.me/393519299054?text=${encodeURIComponent("Hola Seba, soy " + data.name + ". Proyecto: " + data.message)}`, '_blank');
+            btn.innerText = 'ENVIAR PROYECTO';
+            btn.disabled = false;
+        }
+    };
+
+    // --- REVEAL & SCROLL ---
+    const obs = new IntersectionObserver((es) => { 
+        es.forEach(e => { if(e.isIntersecting) e.target.classList.add("active"); }); 
+    }, { threshold: 0.1 });
+    qa('.reveal, .section-title, .title-premium, .service-item, .bio-row').forEach(el => obs.observe(el));
+
+    window.onscroll = () => { 
+        window.scrollY > 40 ? navbar.classList.add('scrolled') : navbar.classList.remove('scrolled'); 
+    };
+
+    window.changeLang(localStorage.getItem('preferredLang') || 'es');
+
+    // Inicializar carrusel DESPUÉS de que el DOM esté listo
+    buildVideoDots();
+    updateCarousel();
+
+    // --- CARRUSEL DE TESTIMONIOS ---
+    (function() {
+        const track = document.getElementById('testimonialsTrack');
+        const dotsWrap = document.getElementById('testiDots');
+        const prevBtn = document.getElementById('testiPrev');
+        const nextBtn = document.getElementById('testiNext');
+        if (!track) return;
+
+        let idx = 0;
+        let timer;
+
+        function getCards() { return Array.from(track.querySelectorAll('.testimonial-card')); }
+
+        function buildDots() {
+            if (!dotsWrap) return;
+            dotsWrap.innerHTML = '';
+            getCards().forEach((_, i) => {
+                const d = document.createElement('button');
+                d.className = 'testi-dot' + (i === 0 ? ' active' : '');
+                d.setAttribute('aria-label', 'Testimonio ' + (i+1));
+                d.onclick = () => goTo(i);
+                dotsWrap.appendChild(d);
+            });
+        }
+
+        function goTo(n) {
+            const cards = getCards();
+            if (!cards.length) return;
+            idx = ((n % cards.length) + cards.length) % cards.length;
+            const card = cards[idx];
+            // scroll para centrar la tarjeta
+            const scrollLeft = card.offsetLeft - (track.offsetWidth / 2) + (card.offsetWidth / 2);
+            track.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+            // puntos
+            if (dotsWrap) {
+                dotsWrap.querySelectorAll('.testi-dot').forEach((d, i) => d.classList.toggle('active', i === idx));
+            }
+        }
+
+        function startAuto() {
+            clearInterval(timer);
+            timer = setInterval(() => goTo(idx + 1), 4500);
+        }
+
+        if (prevBtn) prevBtn.onclick = () => { goTo(idx - 1); startAuto(); };
+        if (nextBtn) nextBtn.onclick = () => { goTo(idx + 1); startAuto(); };
+
+        buildDots();
+        goTo(0);
+        startAuto();
+
+        // Pausar al hover
+        track.addEventListener('mouseenter', () => clearInterval(timer));
+        track.addEventListener('mouseleave', startAuto);
+
+        // Exponer para que el formulario pueda actualizarlo
+        window._testiRefresh = function() { buildDots(); goTo(getCards().length - 1); startAuto(); };
+    })();
+
+    // --- FORMULARIO DE COMENTARIOS ---
+    (function() {
+        const form = document.getElementById('commentForm');
+        const track = document.getElementById('testimonialsTrack');
+        if (!form || !track) return;
+
+        // Cargar guardados en localStorage
+        const STORAGE_KEY = 'seba_comments_v1';
+        function load() {
+            try {
+                const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+                saved.forEach(c => insertCard(c.name, c.role, c.text, false));
+                if (saved.length && window._testiRefresh) window._testiRefresh();
+            } catch(e) {}
+        }
+
+        function insertCard(name, role, text, save) {
+            const card = document.createElement('div');
+            card.className = 'testimonial-card';
+            card.innerHTML = `<div class="quote-icon">&#x201C;</div>
+                <p class="testimonial-text">${escHtml(text)}</p>
+                <div class="testimonial-author">
+                    <span class="author-name">${escHtml(name)}</span>
+                    <span class="author-position">${escHtml(role || 'Cliente')}</span>
+                </div>`;
+            track.appendChild(card);
+            if (save) {
+                try {
+                    const arr = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+                    arr.push({ name, role, text });
+                    localStorage.setItem(STORAGE_KEY, JSON.stringify(arr));
+                } catch(e) {}
+                if (window._testiRefresh) window._testiRefresh();
+            }
+        }
+
+        function escHtml(str) {
+            return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+        }
+
+        form.onsubmit = (e) => {
+            e.preventDefault();
+            const name = document.getElementById('commentName').value.trim();
+            const role = document.getElementById('commentRole').value.trim();
+            const text = document.getElementById('commentText').value.trim();
+            if (!name || !text) return;
+            insertCard(name, role, text, true);
+            form.reset();
+            const btn = form.querySelector('.btn-submit-comment');
+            const orig = btn.textContent;
+            btn.textContent = '✦ ¡GRACIAS POR TU OPINIÓN!';
+            btn.disabled = true;
+            setTimeout(() => { btn.textContent = orig; btn.disabled = false; }, 3500);
+        };
+
+        load();
+    })();
+});
+</script>
+</body>
+</html>
